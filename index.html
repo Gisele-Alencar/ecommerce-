@@ -1,140 +1,53 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maison | Roupas Minimalistas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gii Alencar | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <div class="brand">
-        <span class="mark"></span>
-        <span class="logo">Maison</span>
+  <main class="page" role="main">
+    <article class="card" aria-label="Perfil profissional de Gii Alencar">
+      <div class="profile">
+        <figure class="avatar" aria-hidden="true">
+          <!-- Troque pela sua imagem -->
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" alt="Foto de Gii Alencar">
+        </figure>
       </div>
-      <nav class="menu">
-        <button class="menu-btn" aria-expanded="false" aria-controls="menuList">Menu</button>
-        <ul id="menuList" class="menu-list">
-          <li><a href="#novidades">Novidades</a></li>
-          <li><a href="#feminino">Feminino</a></li>
-          <li><a href="#masculino">Masculino</a></li>
-          <li><a href="#acessorios">Acessórios</a></li>
-          <li><a href="#sale" class="sale">Sale</a></li>
-        </ul>
-      </nav>
-      <div class="actions">
-        <input type="search" placeholder="Buscar" aria-label="Buscar produtos" />
-        <a class="link" href="#conta">Conta</a>
-        <a class="link" href="#carrinho" aria-label="Abrir carrinho">Carrinho (0)</a>
-      </div>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Roupas atemporais</h1>
-        <p>Peças essenciais em modelagens limpas, feitas para durar e combinar com tudo.</p>
-        <div class="hero-cta">
-          <a class="btn primary" href="#novidades">Comprar agora</a>
-          <a class="btn ghost" href="#catalogo">Ver catálogo</a>
+      <div class="content">
+        <header class="header">
+          <div class="name">Gii Alencar</div>
+          <div class="role">UX/UI Designer em formação • Automação • No-code</div>
+        </header>
+
+        <div class="stats">
+          <div class="stat">
+            <span>⭐ 4.8</span>
+            <span class="label">Feedback</span>
+          </div>
+          <div class="stat">
+            <span>🎨 4 projetos</span>
+            <span class="label">Portfólio</span>
+          </div>
+          <div class="stat">
+            <span>📘 Estudante</span>
+            <span class="label">Sistemas de Informação</span>
+          </div>
+        </div>
+
+        <p class="desc">
+          Crio interfaces e automações com IA e ferramentas no-code.
+          Desenvolvo projetos acadêmicos e pessoais aplicando design centrado no usuário.
+        </p>
+
+        <div class="cta-row">
+          <a href="#" class="btn-primary">Ver Projetos</a>
+          <a href="mailto:seuemail@exemplo.com" class="btn-ghost">Entrar em contato</a>
         </div>
       </div>
-      <div class="hero-card">
-        <span class="badge">Frete grátis acima de R$ 299</span>
-      </div>
-    </section>
-
-    <section id="novidades" class="container grid">
-      <header class="section-head">
-        <h2>Novidades</h2>
-        <a href="#catalogo" class="see-all">Ver tudo</a>
-      </header>
-
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1520975682039-a1e2d2d6cfec?q=80&w=800&auto=format&fit=crop" alt="Blazer marrom minimalista" />
-        <h3>Blazer Terracota</h3>
-        <p class="price">R$ 459</p>
-        <button class="btn add">Adicionar</button>
-      </article>
-
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1520975916090-3105956c5c4e?q=80&w=800&auto=format&fit=crop" alt="Camisa branca de algodão" />
-        <h3>Camisa Algodão Branco</h3>
-        <p class="price">R$ 179</p>
-        <button class="btn add">Adicionar</button>
-      </article>
-
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1520975960430-56e2ad87f4a9?q=80&w=800&auto=format&fit=crop" alt="Calça alfaiataria bege" />
-        <h3>Calça Alfaiataria Areia</h3>
-        <p class="price">R$ 289</p>
-        <button class="btn add">Adicionar</button>
-      </article>
-
-      <article class="product">
-        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="Vestido midi marrom" />
-        <h3>Vestido Midi Cacau</h3>
-        <p class="price">R$ 329</p>
-        <button class="btn add">Adicionar</button>
-      </article>
-    </section>
-
-    <section id="feminino" class="container categories">
-      <h2>Comprar por categoria</h2>
-      <div class="cat-grid">
-        <a class="cat" href="#feminino"><span>Feminino</span></a>
-        <a class="cat" href="#masculino"><span>Masculino</span></a>
-        <a class="cat" href="#acessorios"><span>Acessórios</span></a>
-        <a class="cat" href="#sale"><span>Sale</span></a>
-      </div>
-    </section>
-
-    <section id="benefits" class="container benefits">
-      <div class="benefit">
-        <strong>Troca fácil</strong>
-        <span>30 dias após o recebimento</span>
-      </div>
-      <div class="benefit">
-        <strong>Pagamento seguro</strong>
-        <span>Pix, cartão e boleto</span>
-      </div>
-      <div class="benefit">
-        <strong>Atendimento humano</strong>
-        <span>Seg–Sex, 9h–18h</span>
-      </div>
-    </section>
+    </article>
   </main>
-
-  <footer class="footer">
-    <div class="container foot-grid">
-      <div>
-        <h3>Maison</h3>
-        <p>Design essencial, materiais responsáveis.</p>
-      </div>
-      <nav aria-label="Rodapé">
-        <ul class="foot-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-          <li><a href="#atendimento">Atendimento</a></li>
-          <li><a href="#trocas">Trocas & Devoluções</a></li>
-        </ul>
-      </nav>
-      <form class="newsletter" aria-label="Assinar newsletter">
-        <label for="mail">Receba novidades</label>
-        <div class="field">
-          <input id="mail" type="email" placeholder="seu@email.com" required />
-          <button class="btn primary" type="submit">Assinar</button>
-        </div>
-      </form>
-    </div>
-    <p class="copy">© 2025 Maison</p>
-  </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
