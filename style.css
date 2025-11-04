@@ -127,3 +127,82 @@ h1 {
     font-size: 1.3rem;
   }
 }
+/* === ESTILOS DA PÁGINA DE PROJETOS === */
+
+.projects-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.projects-page h1 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.projects-page p {
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.project-card iframe {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.voltar {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card iframe {
+    height: 250px;
+  }
+}
