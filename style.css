@@ -26,11 +26,11 @@ body {
 
 /* Imagem de perfil */
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  object-position: 50% 20%;
 }
 
 /* Título e subtítulo */
