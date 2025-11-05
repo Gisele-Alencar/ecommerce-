@@ -139,10 +139,11 @@ h1 {
 
 .projects-page h1 {
   font-size: 2rem;
-  background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(135deg, #a770ef, #7c708a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
+  font-family: 
 }
 
 .projects-page p {
