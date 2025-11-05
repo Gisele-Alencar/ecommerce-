@@ -138,7 +138,7 @@ h1 {
 }
 
 .projects-page h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   background: linear-gradient(135deg, #a770ef, #7c708a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
