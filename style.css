@@ -127,85 +127,84 @@ p {
   font-size: 0.95rem;
   margin: 0;
 }
-/* ======== Seção de Projetos ======== */
+/* === ESTILOS DA PÁGINA DE PROJETOS === */
 
-.projetos {
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
-  padding: 40px;
+.projects-page {
+  max-width: 1000px;
   margin: 40px auto;
-  max-width: 900px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px;
 }
 
-.projetos h1 {
-  color: #b983ff; /* Roxo igual ao resto do site */
+.projects-page h1 {
   font-size: 2rem;
+  background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
-.projetos .descricao {
-  color: #ccc;
-  margin-bottom: 30px;
+.projects-page p {
+  color: #bbb;
   font-size: 1rem;
+  margin-bottom: 30px;
 }
 
-.grid-projetos {
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 25px;
-  justify-items: center;
+  margin-bottom: 40px;
 }
 
-.projeto-card {
+.project-card {
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.project-card iframe {
   width: 100%;
-  max-width: 300px;
+  height: 320px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
 }
 
-.projeto-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 15px rgba(185, 131, 255, 0.3);
-}
-
-.projeto-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.projeto-card h3 {
-  color: #b983ff;
-  margin-bottom: 8px;
+.project-card h2 {
   font-size: 1.2rem;
+  margin: 10px 0 5px;
 }
 
-.projeto-card p {
-  color: #ddd;
+.project-card p {
+  color: #ccc;
   font-size: 0.95rem;
-  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
-.projeto-card a {
+.voltar {
+  margin-top: 20px;
   display: inline-block;
-  padding: 8px 14px;
-  background: #b983ff;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s ease;
 }
 
-.projeto-card a:hover {
-  background: #9f64ff;
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card iframe {
+    height: 250px;
+  }
 }
 
 /* === Responsividade === */
