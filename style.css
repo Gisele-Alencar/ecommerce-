@@ -83,8 +83,8 @@ p {
 .habilidades {
   background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
-  padding: 30px;
-  margin: 40px auto;
+  padding: 0px;
+  margin: 55px auto;
   max-width: 900px;
   text-align: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
