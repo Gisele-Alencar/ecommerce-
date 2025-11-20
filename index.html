@@ -85,5 +85,50 @@
       <a href="https://www.instagram.com/giisele_al" class="btn outline">Entrar em contato</a>
     </div>
   </div>
+  
+  <section class="carreira">
+    <h1>Momento Carreira</h1>
+    <p class="descricao">Eventos, hackathons e momentos importantes da minha jornada profissional.</p>
+
+    <div class="grid-carreira">
+
+      <div class="carreira-card">
+        <img src="Assets/foto1.jpg" alt="Evento 1">
+        <h3>Evento Tech</h3>
+        <p>Participação em meetup focado em inovação e tecnologia.</p>
+      </div>
+
+      <div class="carreira-card">
+        <img src="Assets/foto2.jpg" alt="Hackathon">
+        <h3>Hackathon</h3>
+        <p>Equipe finalista em solução criativa para negócios.</p>
+      </div>
+
+      <div class="carreira-card">
+        <img src="Assets/foto3.jpg" alt="Workshop">
+        <h3>Workshop</h3>
+        <p>Treinamento prático sobre ferramentas de produtividade.</p>
+      </div>
+
+      <div class="carreira-card">
+        <img src="Assets/foto4.jpg" alt="Feira de Inovação">
+        <h3>Feira de Inovação</h3>
+        <p>Apresentação de ideias para empreendedores e investidores.</p>
+      </div>
+</section>
+  <script>
+  const items = document.querySelectorAll('.carreira-card');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer.observe(item));
+  </script>
+  
 </body>
   </html>
